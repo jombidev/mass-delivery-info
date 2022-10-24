@@ -53,7 +53,7 @@ function idFromString(str) {
         if (!s.length)
             continue
         const t = s.split(" ")
-        deliveries.push({"id": t[0], "where": t[1]})
+        deliveries.push({"id": t[0], "where": t.slice(1).join(" ")})
     }
     console.log(deliveries)
 
